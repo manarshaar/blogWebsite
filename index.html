@@ -1,84 +1,301 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Blog</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"><body>
-    <nav>
-        <div class="nav">
-            <div class="leftnav">
-                <a href="#" class="home">Home Examples</a>
-                <a href="#" class="posts">Posts</a>
-                <a href="#" class="aboutme">About Me</a>
-                <a href="#" class="contactme">Contact Me</a>
-                <a href="#" class="purchase">Purchase!</a>
-            </div>
-    
-            <div class="rightnav">
-                <i class="uil uil-facebook-f"></i>
-                <i class="uil uil-twitter"></i>
-                <i class="uil uil-google"></i>
-                <i class="uil uil-behance"></i>
-                <i class="uil uil-dribbble"></i>
-                <i class="uil uil-instagram"></i>
-                <i class="uil uil-rss"></i>
-                <hr>
-                <i class="uil uil-search"></i>
-            </div>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/solid.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="container flex row justify-between">
+        <nav class="main-navigation">
+          <ul>
+            <li>
+              <a href="#" id="home">Home Examples</a>
+            </li>
+            <li>
+              <a href="#" id="posts">Posts</a>
+            </li>
+            <li>
+              <a href="#" id="aboutme">About Me</a>
+            </li>
+            <li>
+              <a href="#" id="contactme">Contact Me</a>
+            </li>
+            <li>
+              <a href="#" id="purchase">Purchase!</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="socials">
+          <a href="#"><i class="uil uil-facebook-f"></i></a>
+          <a href="#"><i class="uil uil-twitter"></i></a>
+          <a href="#"><i class="uil uil-google"></i></a>
+          <a href="#"><i class="uil uil-behance"></i></a>
+          <a href="#"><i class="uil uil-dribbble"></i></a>
+          <a href="#"><i class="uil uil-instagram"></i></a>
+          <a href="#"><i class="uil uil-rss"></i></a>
+          <div class="search">
+            <a href="#"><i class="uil uil-search"></i></a>
+          </div>
         </div>
-        <hr>
-    </nav>
+      </div>
 
-    <div class="main">
-        <section class="logo">
-            <img width="124" src="https://awcdn1.ahmad.works/writing/wp-content/uploads/2018/02/logo_124.png" alt="Logo">
-            <div class="circle">
-                <i class="uil uil-align-center"></i>
-            </div>
-        </section>
-        <section class="posts">
-            <div class="card">
-                <img src="https://picsum.photos/255/170" alt="image">
-                <h3>Cosy Bright Office In Yellow And Grey Colors</h3>
-                <hr>
-                blabla
-                <hr>
-            </div>
+      <div class="container mobile-header">
+        <span class="menu">Menu</span>
+        <i class="uil uil-bars menu-icon"></i>
+      </div>
+    </header>
 
-            <div class="card">
-                <img src="https://picsum.photos/255/170" alt="image">
-                <h3>Cosy Bright Office In Yellow And Grey Colors</h3>
-                <hr>
-                blabla
-                <hr>
-            </div>
+    <div class="container main">
+      <section class="title">
+        <img
+          width="124"
+          src="https://awcdn1.ahmad.works/writing/wp-content/uploads/2018/02/logo_124.png"
+          alt="Logo"
+        />
+        <div class="circle">
+          <i class="uil uil-align-center"></i>
+        </div>
+      </section>
 
-            <div class="card">
-                <img src="https://picsum.photos/255/170" alt="image">
-                <h3>Cosy Bright Office In Yellow And Grey Colors</h3>
-                <hr>
-                blabla
-                <hr>
-            </div>
+      <section class="posts wrap">
+        <div class="card">
+          <img src="https://picsum.photos/240/170" alt="image" />
+          <h3>Cosy Bright Office In Yellow And Grey Colors</h3>
 
-            <div class="card">
-                <img src="https://picsum.photos/255/170" alt="image">
-                <h3>Cosy Bright Office In Yellow And Grey Colors</h3>
-                <hr>
-                blabla
-                <hr>
+          <div class="tags">
+            <i class="uil uil-camera"></i>
+            <div class="tags-info">
+              <span class="in">In</span>
+              <span class="data">Life Style, Photograph</span>
+              <span class="tag">Tags</span>
+              <span class="data">image</span>
+              <span class="date">May 17, 2015</span>
             </div>
-            
-        </section>
+          </div>
+
+          <p class="description">
+            It’s no secret that the digital industry is booming. From exciting
+            startups to global brands, companies are reaching out to digital
+            agencies, responding to the new possibilities available. However,
+            the
+          </p>
+        </div>
+        <div class="card">
+          <img src="https://picsum.photos/240/170" alt="image" />
+          <h3>Cosy Bright Office In Yellow And Grey Colors</h3>
+
+          <div class="tags">
+            <i class="uil uil-camera"></i>
+            <div class="tags-info">
+              <span class="in">In</span>
+              <span class="data">Life Style, Photograph</span>
+              <span class="tag">Tags</span>
+              <span class="data">image</span>
+              <span class="date">May 17, 2015</span>
+            </div>
+          </div>
+
+          <p class="description">
+            It’s no secret that the digital industry is booming. From exciting
+            startups to global brands, companies are reaching out to digital
+            agencies, responding to the new possibilities available. However,
+            the
+          </p>
+        </div>
+
+        <div class="card">
+          <img src="https://picsum.photos/240/170" alt="image" />
+          <h3>Cosy Bright Office In Yellow And Grey Colors</h3>
+
+          <div class="tags">
+            <i class="uil uil-camera"></i>
+            <div class="tags-info">
+              <span class="in">In</span>
+              <span class="data">Life Style, Photograph</span>
+              <span class="tag">Tags</span>
+              <span class="data">image</span>
+              <span class="date">May 17, 2015</span>
+            </div>
+          </div>
+
+          <p class="description">
+            It’s no secret that the digital industry is booming. From exciting
+            startups to global brands, companies are reaching out to digital
+            agencies, responding to the new possibilities available. However,
+            the
+          </p>
+        </div>
+
+        <div class="card">
+          <img src="https://picsum.photos/240/170" alt="image" />
+          <h3>Cosy Bright Office In Yellow And Grey Colors</h3>
+
+          <div class="tags">
+            <i class="uil uil-camera"></i>
+            <div class="tags-info">
+              <span class="in">In</span>
+              <span class="data">Life Style, Photograph</span>
+              <span class="tag">Tags</span>
+              <span class="data">image</span>
+              <span class="date">May 17, 2015</span>
+            </div>
+          </div>
+
+          <p class="description">
+            It’s no secret that the digital industry is booming. From exciting
+            startups to global brands, companies are reaching out to digital
+            agencies, responding to the new possibilities available. However,
+            the
+          </p>
+        </div>
+
+        <div class="card">
+          <img src="https://picsum.photos/240/170" alt="image" />
+          <h3>Cosy Bright Office In Yellow And Grey Colors</h3>
+
+          <div class="tags">
+            <i class="uil uil-camera"></i>
+            <div class="tags-info">
+              <span class="in">In</span>
+              <span class="data">Life Style, Photograph</span>
+              <span class="tag">Tags</span>
+              <span class="data">image</span>
+              <span class="date">May 17, 2015</span>
+            </div>
+          </div>
+
+          <p class="description">
+            It’s no secret that the digital industry is booming. From exciting
+            startups to global brands, companies are reaching out to digital
+            agencies, responding to the new possibilities available. However,
+            the
+          </p>
+        </div>
+      </section>
+
+      <section class="pagination">
+        <a href="#" class="active">1</a>
+        <a href="#">2</a>
+        <a href="#">&raquo;</a>
+      </section>
     </div>
-    
-    
 
-    
-    
-    
-</body>
+    <footer>
+      <div class="container flex row wrap">
+        <div class="company-details">
+          <div class="contact-details">
+            <img
+              alt="Home logo"
+              src="https://www.marketlab.com/userfiles/images/logos/logo3.png"
+            />
+            <p class="footer-address">
+              6850 Southbelt Dr<br />Caledonia, MI 49316
+            </p>
+          </div>
+
+          <div class="certifications-details">
+            <div class="footer-telephone">
+              <i class="uil uil-phone"></i>
+              <span>1-866-237-3722</span>
+            </div>
+            <div class="certification-img">
+              <img src="https://staticw2.yotpo.com/assets/badge.png" alt="" />
+              <div class="number-certificate">1,939</div>
+              <div class="stars-certificate">
+                <i class="uis uis-star"></i>
+                <i class="uis uis-star"></i>
+                <i class="uis uis-star"></i>
+                <i class="uis uis-star"></i>
+                <i class="uis uis-star"></i>
+              </div>
+              <div class="review-certificate">certifies reviews</div>
+              <div class="poweredBy-certificate">Powered by YOTPO</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-navigations flex row">
+          <div class="footer-column">
+            <h3>our company</h3>
+            <div class="footer-column-items flex">
+              <a href="#">Company Profile</a>
+              <a href="#">Employment</a>
+              <a href="#">Privacy Policy</a>
+              <a href="#">Why Shop MarketLab</a>
+              <a href="#">Customer Testimonials</a>
+              <a href="#">W-9 Information</a>
+            </div>
+          </div>
+
+          <div class="footer-column">
+            <h3>customer service</h3>
+            <div class="footer-column-items flex">
+              <a href="#">Contact Us</a>
+              <a href="#">Customer Satisfaction</a>
+              <a href="#">Payment & Pricing</a>
+              <a href="#">Shipping</a>
+              <a href="#">Terms Of Sale</a>
+              <a href="#">Catalog Quick Order</a>
+              <a href="#">Custom Label Order Form</a>
+              <a href="#">Customizable Solutions</a>
+              <a href="#">Accessibility</a>
+              <a href="#">Resource Center</a>
+            </div>
+          </div>
+
+          <div class="footer-column">
+            <h3>resources</h3>
+            <div class="footer-column-items flex">
+              <a href="#">Request Catalog</a>
+              <a href="#">Download Catalog</a>
+              <a href="#">Download Infection Control Catalog</a>
+              <a href="#">Dispensers Buying Guide</a>
+              <a href="#">Insight Cart Buying Guide</a>
+              <a href="#">Cart Demonstrations</a>
+              <a href="#">Spicemen Transport Solutions</a>
+              <a href="#">Order Of Draw Download</a>
+              <a href="#">Website Help</a>
+              <a href="#">Custom Cart Demo</a>
+            </div>
+          </div>
+
+          <div class="footer-column">
+            <h3>shop products</h3>
+            <div class="footer-column-items flex">
+              <a href="#">Carts</a>
+              <a href="#">Cleaning & Disinfecting</a>
+              <a href="#">Clinical Laboratory</a>
+              <a href="#">Furniture</a>
+              <a href="#">General Laboratory</a>
+              <a href="#">Life Science</a>
+              <a href="#">Organization</a>
+              <a href="#">Organization</a>
+              <a href="#">Phlebotomy Supplies</a>
+              <a href="#">PPE & Dispensers</a>
+              <a href="#">Infection Control</a>
+              <a href="#">Specimen Transport</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="copywrite container">
+        &copy 2015 Writing Designs, INC. All Rights Reserved.
+      </div>
+    </footer>
+  </body>
 </html>

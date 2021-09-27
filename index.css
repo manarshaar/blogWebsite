@@ -1,73 +1,111 @@
 
-* {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 14px;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
 }
 
-nav{
-    position: fixed;
-    width: 100%;
-    background-color: white;
-    z-index: 1;
-    
+.container{
+    max-width: 800px;
+    margin: auto;
+    padding: 0 20px;
+  
 }
-
-.nav{
+.flex{
     display: flex;
+}
+.row{
+    flex-direction: row;
+}
+.justify-between{
     justify-content: space-between;
-    margin-left: 17%;
-    margin-right: 17%;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+ 
+
+/* Header style code */
+/* position sticky vs fixed */
+header{
+    background-color: white;
+    position: fixed; 
+    z-index: 1;
+    width: 100%;
+    height: 47px;
+    box-shadow: 1px 1px 1px rgb(240, 233, 233);
 }
 
 
-.leftnav a{
+nav.main-navigation ul li{
     display: inline-block;
     padding: 15px 10px;
-    text-decoration: none;
-    color: rgb(65, 63, 63);   
+    list-style-type: none;
+    color: rgb(65, 63, 63);  
+    /* height: 47px;  */
 }
 
-.leftnav a:first-child{
+header a{
+    color: rgb(65, 63, 63);
+    text-decoration: none;
+}
+
+nav ul li a:first-child{
     padding-left: 0;
 }
 
-.leftnav a:hover{
+nav ul li a:hover{
     transition: 1s;
-    color: rgb(14, 13, 13);
+    color: black;
 }
 
-.rightnav i{
+.socials i, .search i{
     display: inline-block;
-    padding: 15px 8px;
+    padding: 15px 5px;
     vertical-align:top;
 }
 
 
-hr{
-    background-color: rgb(240, 233, 233); 
-    height: 1px; 
-    border-style: none;
-}
-
-.rightnav hr{
+.search{
+    border-left: 1px solid rgb(240, 233, 233);
+    padding-left: 5px;
+    margin-left: 10px;
     display: inline-block;
-    width: 1px;
-    height: 100%;
-    margin-left: 5px;
 }
 
+header .mobile-header{
+    max-width: 95%;
+    display: none;
+    border: 3px solid rgb(242, 242, 242);
+    border-radius: 30px;
+    cursor: pointer;
+    color: rgb(131, 127, 127);
+    margin: 9px auto;
+    height: 30px;
+    padding: 4px 20px;
+}
+
+header .mobile-header > i{
+    float: right;
+}
+
+header .mobile-header i,span{
+    font-size: 14px;
+}
+
+/* Main style code */
 .main{
     padding-top: 90px;
-    margin-left: 17%;
-    margin-right: 17%;
 }
 
-.logo{
+.title{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 90px;
+    margin-bottom: 30px;
 }
 
 .circle{
@@ -84,34 +122,263 @@ hr{
 
 .posts{
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     row-gap: 40px;
+    margin-bottom: 4em;
 }
 
 .card{
     /* flex-basis: 33.333333%; */
     width: min-content;
+    position: relative;
 }
 
 .card img{
-    max-width: 293px;
-    max-height: 199px;
+    max-width: 240px;
     border-radius: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .card h3{
-    font-size: 17px;
-    width: 285px;
+    font-size: 15px;
     margin-bottom: 15px;
+    letter-spacing: 1px;
     
 }
 
-.card hr{
-    border-top: 1px dotted rgb(240, 233, 233);
-    width: 293px;
+.card h3::before{
+    content: open-quote;
 }
+
+.card h3::after{
+    content: close-quote;
+}
+
+.card .tags{
+    border-top: 1px dotted rgb(221, 221, 221);
+    border-bottom: 1px dotted rgb(221, 221, 221);
+    padding: 3px 0;
+    display: flex;
+}
+
+.tags span{
+    color: rgb(156, 155, 155);
+    line-height: 25px;
+}
+
+.uil-camera{
+    color: rgb(194, 189, 189); 
+    font-size: 20px;
+    display: block;
+    padding-left: 2px;
+    padding-right: 10px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.tags .data{
+    color: rgb(65, 63, 63);
+    padding-right: 8px;
+}
+
+.card .description{
+    margin-top: 15px;
+    padding-bottom: 30px;
+    font-size: 13px;
+    word-spacing: 1px;
+    border-bottom: 1px dotted rgb(221, 221, 221);
+}
+
+/* Pagination style code */
+.pagination{
+    display: block;
+    height: 10em;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 13px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    margin-right: 7px;
+  }
+  
+  .pagination a.active {
+    border: 1px solid #f08c1b;
+  }
+  
+  .pagination a:hover:not(.active) {
+    border: 1px solid #f08c1b;
+  }
+
+/* Footer style code */
+footer{
+    padding-top: 55px; 
+    border-top: 1px solid rgb(221, 221, 221);
+}
+
+footer h3{
+    font-size: 11px;
+    margin-bottom: 1.2em;
+    text-transform:uppercase;
+}
+
+footer a{
+    text-decoration: none;
+    color: rgb(131, 127, 127);
+    font-size: 10px;
+}
+
+footer .container{
+    justify-content: space-between;
+}
+
+.footer-navigations{
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.company-details{
+    margin-bottom: 40px;
+}
+
+.footer-navigations > .footer-column{
+    width: 140px; 
+}
+
+.footer-column-items{
+    flex-direction: column;
+}
+
+.footer-column-items > a{
+    padding: 5px 5px 5px 0;
+    max-width: 130px;
+}
+
+.contact-details{
+    margin-bottom: 20px;
+}
+
+.contact-details > img{
+    width: 4em;
+}
+
+.footer-address{
+    padding-top: 10px;
+}
+
+.certifications-details{
+    margin-bottom: 20px;
+}
+
+.certification-img{
+    position: relative;
+}
+
+.certification-img > img{
+    width: 10em;
+    margin: 0 30px;
+}
+
+.certification-img  div{
+    position: absolute;
+}
+
+.number-certificate{
+    font-size: large;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: white;
+    right: 67px;
+    bottom: 58px;
+}
+
+.stars-certificate{
+    color: rgba(226, 196, 27, 0.993);
+    right: 53px;
+    bottom: 45px;
+}
+
+.review-certificate{
+    right: 45px;
+    bottom: 27px;
+    font-size: 10px;
+    text-transform:uppercase;
+    color: rgb(94, 177, 245);
+}
+
+.poweredBy-certificate{
+    left: 38px;
+}
+
+.footer-telephone{
+    padding-bottom: 40px;
+    border-bottom: 2px solid rgb(194, 189, 189);
+    margin-bottom: 20px;
+}
+
+.footer-telephone span{
+    font-size: 12px;
+}
+
+.copywrite{
+    margin-top: 3.5em;
+    padding: 20px 0 20px 5px;
+    border-top: 1px dotted rgb(221, 221, 221);  
+    
+}
+
+/*Media Quieries*/
+@media (max-width: 670px){
+    header .container:first-child{
+        display: none;
+    }
+
+    header .mobile-header{
+        display: block;
+    }
+
+    .pagination{
+        width: fit-content;
+        margin: auto;
+    }
+}
+
+@media (max-width: 580px){
+    .posts .card{
+        margin: auto;
+    }
+
+    .footer-navigations {
+        flex-direction: column;
+    }
+
+    .company-details{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-basis: 100%;
+        margin-bottom: 40px;
+    }
+
+    .footer-column-items{
+        margin-bottom: 20px;
+    }
+
+    .copywrite{
+        text-align: center;
+    }
+
+}
+
+
+
+
+
 
 
 
